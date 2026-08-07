@@ -635,9 +635,9 @@
             document.getElementById("minutes").textContent = padZero(minutes);
             document.getElementById("seconds").textContent = padZero(seconds);
         }
-
+        let countdown;
         updateCountdown();
-        const countdown = setInterval(updateCountdown, 1000);
+        countdown = setInterval(updateCountdown, 1000);
 
         const wishForm = document.getElementById("wish-form");
         if (wishForm) {
